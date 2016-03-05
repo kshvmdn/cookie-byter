@@ -34,6 +34,31 @@
     width: 400px
 }
 
+.buy-worker button {
+  text-align: center;
+  background-color: #9900cc;
+}
+
+.buy-worker button {
+  text-align: right;
+  background-color: #9900cc;
+  border: outset;
+  color: white;
+  padding: 20px 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.buy-worker button:hover {
+  background-color: #3e8e41
+}
+
+.buy-worker button:active {
+  background-color: #3e8e41;
+}
+
 .buy button:hover {
   background-color: #cc00cc
 }
@@ -51,10 +76,10 @@
 }
 
 p {
-    display: block;
-    font-family: courier;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+  display: block;
+  font-family: courier;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
 }

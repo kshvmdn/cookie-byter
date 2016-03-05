@@ -8,7 +8,7 @@
    <center><h1>CookieByter</h1></center>
 
    {{> byte}}
-   {{> buy}}
+   {{> worker}}
    <button class="reset">Reset</button>
 </body>
 
@@ -21,6 +21,8 @@
 
 <template name="buy">
   <div class="buy" style="text-align:right;">
+<template name="worker">
+  <div class="buy-worker" style="text-align:center;">
     <button id="waterloo">BUY WATERLOO STUDENT (1)</button>
     <button id="ryerson">BUY RYERSON STUDENT (2)</button>
     <button id="student">BUY COMPETENT CS STUDENT (64)</button>
@@ -30,5 +32,11 @@
     <button id="cto">BUY CTO (32768)</button>
     <button id="billgates">BUY A BILL GATES (131072)</button>
     <button id="alanturing">BUY THE ALAN TURING (524288)</button>
+  </div>
+</template>
+
+<template name="technology">
+  <div class="buy-technology" style="text-align:center;">
+
   </div>
 </template>

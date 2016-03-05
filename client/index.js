@@ -1,4 +1,3 @@
-var interval;
 var ppl = {
   'waterloo': {
     'boostrate': -1,
@@ -48,11 +47,11 @@ var ppl = {
 };
 
 var init = function () {
-  Session.setDefault('clickrate', 1.0);
-  Session.setDefault('boostrate', 0);
-  Session.setDefault('score', 0);
-  Session.setDefault('timeInterval', 1000);
-  Session.setDefault('people', ppl);
+  Session.set('clickrate', 1.0);
+  Session.set('boostrate', 0);
+  Session.set('score', 0);
+  Session.set('timeInterval', 1000);
+  Session.set('people', ppl);
 
   var interval = Meteor.setInterval(function () {
     Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
