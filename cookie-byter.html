@@ -2,10 +2,11 @@
 <head>
  <title></title>
  <style type="text/css" href="CookieByter.css"></style>
+ <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-   <center><h1>CookieByter</h1></center>
+   <center><h1>COOKIE-BYTER</h1></center>
 
    {{> upgrade}}
    {{> byte}}
@@ -24,7 +25,7 @@
 <template name="worker">
   <div class="buy-worker" style="text-align:center;">
     {{#each people}}
-      <button id={{class_}}>BUY {{name}} ({{price}})</button>
+      <button id={{class_}}>{{name}} ({{price}})</button>
     {{/each}}
   </div>
 </template>
