@@ -114,12 +114,15 @@ var upg = {
 
 var init = function () {
   Session.setDefault({
-    'clickrate': 1.0,
-    'boostrate': 0,
-    'score': 0,
-    'timeInterval': 1000,
-    'people': ppl,
-    'upgrades': upg
+    clickrate: 1.0,
+    boostrate: 0,
+    score: 0,
+    timeInterval: 1000,
+    people: ppl,
+    upgrades: upg,
+    totalClicks: 0,
+    totalBytes: 0,
+    time: 0
   });
   Session.setDefaultTemp('verifyReset', false);
 
@@ -127,6 +130,10 @@ var init = function () {
     Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
     document.title = String(Session.get('score')) + ' | CookieByter';
   }, Session.get('timeInterval'));
+
+  var counter = Meteor.setInterval(function() {
+    Session.setPersistent('time', Session.get('time') + 1.000);
+  }, 1000);
 }
 
 Template.body.onRendered = function () {
@@ -142,12 +149,15 @@ Template.body.events({
       event.target.innerHTML = 'Reset';
       Session.setTemp('verifyReset', false);
       Session.set({
-        'clickrate': 1.0,
-        'boostrate': 0,
-        'score': 0,
-        'timeInterval': 1000,
-        'people': ppl,
-        'upgrades': upg
+        clickrate: 1.0,
+        boostrate: 0,
+        score: 0,
+        timeInterval: 1000,
+        people: ppl,
+        upgrades: upg,
+        totalClicks: 0,
+        totalBytes: 0,
+        time: 0
       });
       init();
     } else {
