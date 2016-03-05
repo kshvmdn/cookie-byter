@@ -10,31 +10,7 @@
     font-size: 120px;
 }
 
-#waterloo {
-    text-align: center;
-    background-color: #4CAF50; /* Green */
-    border: outset;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-}
-
-#ryerson {
-    text-align: center;
-    background-color: #4CAF50; /* Green */
-    border: outset;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-}
-
-#student {
+.buy button {
     text-align: center;
     background-color: #4CAF50; /* Green */
     border: outset;
