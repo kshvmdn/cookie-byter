@@ -1,20 +1,20 @@
 
 <head>
- <title></title>
+ <title>CookieByter</title>
  <style type="text/css" href="CookieByter.css"></style>
+ <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-   <center><h1>CookieByter</h1></center>
-
+   <center><h1>COOKIE-BYTER</h1></center>
    {{> upgrade}}
    {{> byte}}
    {{> worker}}
-   <button class="reset" style="text-align:center;">Reset</button>
+   <center><button class="reset" style="text-align:center;">Reset</button></center>
 </body>
 
-<template name="byte"> <!-- getting placed where {{> mainbutton}} is -->
-    <div class="main" style="text-align:center;">
+<template name="byte">
+    <div class="main">
       <button class="main-button">BYTE</button>
       <p>{{score}} Bytes</p>
       <p>{{binary}}</p>
@@ -22,17 +22,17 @@
 </template>
 
 <template name="worker">
-  <div class="buy-worker" style="text-align:center;">
+  <div class="buy-worker">
     {{#each people}}
-      <button id={{class_}}>BUY {{name}} ({{price}})</button>
+      <button id={{class_}}>{{name}} (<b>{{price}} B</b>) [{{numberOwned}}]</button>
     {{/each}}
   </div>
 </template>
 
 <template name="upgrade">
-  <div class="buy-technology" style="text-align:center;">
+  <div class="buy-technology">
     {{#each upgrades}}
-      <button id={{class_}} class={{disabled}}>{{name}} ({{price}})</button>
+      <button id={{class_}} class={{disabled}}>{{name}} (<b>{{price}} B</b>)</button>
     {{/each}}
   </div>
 </template>

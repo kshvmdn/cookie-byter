@@ -1,41 +1,47 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Cultive Mono", "Courier New", Courier, monospace;
 }
 
 .main {
-    display: inline-block;
-    width: 33%
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.main p {
+  font-size: 35px;
 }
 
 .main-button {
-    text-align: center;
-    background-color: #9900cc;
-    border: outset;
-    color: white;
-    padding: 25px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 120px;
+  text-align: center;
+  background-color: #9900cc;
+  border: outset;
+  color: white;
+  padding: 25px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 120px;
 }
 
 .buy-worker {
-    display: inline;
-    width: 33%;
-    float: right;
+  display: inline;
+  width: 33%;
+  float: right;
+  text-align: center;
 }
 
 .buy-worker button {
-    text-align: center;
-    background-color: #9900cc;
-    border: outset;
-    color: white;
-    padding: 20px 20px;
-    text-align: right;
-    text-decoration: none;
-    font-size: 20px;
-    float: right;
-    width: 400px
+  text-align: center;
+  background-color: #9900cc;
+  border: outset;
+  color: white;
+  padding: 20px 20px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 20px;
+  float: right;
+  width: 400px
 }
 
 .buy-worker button:hover {
@@ -49,22 +55,22 @@
 }
 
 .buy-technology {
-    display: inline;
-    width: 33%;
-    float: left;
+  display: inline;
+  width: 33%;
+  float: left;
+  text-align: center;
 }
 
 .buy-technology button {
-    text-align: right;
-    background-color: #9900cc;
-    border: outset;
-    color: white;
-    padding: 20px 20px;
-    text-align: right;
-    text-decoration: none;
-    font-size: 20px;
-    float: left;
-    width: 400px
+  text-align: left;
+  background-color: #9900cc;
+  border: outset;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  float: left;
+  width: 400px;
 }
 
 .buy-technology button:hover {
@@ -78,9 +84,9 @@
 }
 
 .tech {
-    display: inline;
-    width: 33%;
-    float: left;
+  display: inline;
+  width: 33%;
+  float: left;
 }
 
 p {
@@ -101,7 +107,7 @@ p {
   text-decoration: none;
   display: inline;
   font-size: 20px;
-  width: 16%
+  width: 16.5%;
 }
 
 button.disabled {
