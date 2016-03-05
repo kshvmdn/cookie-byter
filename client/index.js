@@ -1,60 +1,60 @@
 var ppl = {
   'waterloo': {
-    'name': 'WATERLOO STUDENT'
+    'name': 'WATERLOO STUDENT',
     'boostrate': -1,
     'price': 1,
     'numberOwned': 0
   },
   'ryerson': {
-    'name': 'RYERSON STUDENT'
+    'name': 'RYERSON STUDENT',
     'boostrate': -1,
     'price': 2,
     'numberOwned': 0
   },
   'student': {
-    'name': 'COMPETENT CS STUDENT'
+    'name': 'COMPETENT CS STUDENT',
     'boostrate': 1,
     'price': 64,
     'numberOwned': 0
   },
   'intern': {
-    'name': 'INTERN'
+    'name': 'INTERN',
     'boostrate': 4,
     'price': 256,
     'numberOwned': 0
   },
   'softwareengineer': {
-    'name': 'SOFTWARE ENGINEER'
+    'name': 'SOFTWARE ENGINEER',
     'boostrate': 10,
     'price': 2048,
     'numberOwned': 0
   },
   'srsoftwareengineer': {
-    'name': 'SENIOR SOFTWARE ENGINEER'
+    'name': 'SENIOR SOFTWARE ENGINEER',
     'boostrate': 25,
     'price': 8192,
     'numberOwned': 0
   },
   'cto': {
-    'name': 'CTO'
+    'name': 'CTO',
     'boostrate': 75,
     'price': 32768,
     'numberOwned': 0
   },
   'billgates': {
-    'name': 'A BILL GATES'
+    'name': 'A BILL GATES',
     'boostrate': 200,
     'price': 131072,
     'numberOwned': 0
   },
   'alanturing': {
-    'name': 'THE ALAN TURING'
+    'name': 'THE ALAN TURING',
     'boostrate': 500,
     'price': 524288,
     'numberOwned': 0
   },
   'uoft': {
-    'name': 'UOFT CS STUDENT'
+    'name': 'UOFT CS STUDENT',
     'boostrate': 5000,
     'price': 4194304,
     'numberOwned': 0
