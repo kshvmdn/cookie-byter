@@ -91,3 +91,15 @@ p {
   margin-left: 0;
   margin-right: 0;
 }
+
+.reset {
+    text-align: center;
+    background-color: #9900cc;
+    border: outset;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 120px;
+}
