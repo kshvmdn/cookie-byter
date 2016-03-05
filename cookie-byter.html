@@ -6,11 +6,14 @@
 </head>
 
 <body>
-   <center><h1 class="title">COOKIE-BYTER</h1></center>
-   {{> upgrade}}
-   {{> byte}}
-   {{> worker}}
-   <center><button class="reset" style="text-align:center;">Reset</button></center>
+	<h1 class="title">COOKIE-BYTER</h1>
+	<div class="upgrades">UPGRADES</div>
+	<div class="workers">WORKERS</div>
+
+    {{> upgrade}}
+    {{> byte}}
+    {{> worker}}
+    <center><button class="reset" style="text-align:center;">Reset</button></center>
 </body>
 
 <template name="byte">
