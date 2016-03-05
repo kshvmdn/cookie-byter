@@ -111,6 +111,7 @@ var init = function () {
   Session.set('score', 0);
   Session.set('timeInterval', 1000);
   Session.set('people', ppl);
+  Session.set('upgrades', upg)
 
   var interval = Meteor.setInterval(function () {
     Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
