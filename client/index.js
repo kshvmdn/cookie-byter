@@ -63,41 +63,49 @@ var ppl = {
 
 var upg = {
   'parents': {
+    'name': 'YOUR MOMS HOUSE',
     'clickrate': 1,
     'price': 128,
     'owned': false
   },
   'ownplace': {
+    'name': 'YOUR OWN PLACE',
     'clickrate': 5,
     'price': 1024,
     'owned': false
   },
   'startup': {
+    'name': 'STARTUP',
     'clickrate': 10,
     'price': 4096,
     'owned': false
   },
   'office': {
+    'name': 'OFFICE',
     'clickrate': 50,
     'price': 16384,
     'owned': false
   },
   'building': {
+    'name': 'BUILDING',
     'clickrate': 200,
     'price': 131072,
     'owned': false
   },
   'city': {
+    'name': 'CITY',
     'clickrate': 1000,
     'price': 1048576,
     'owned': false
   },
   'country': {
+    'name': 'COUNTRY',
     'clickrate': 7777,
     'price': 8388608,
     'owned': false
   },
   'world': {
+    'name': 'THE WHOLE FUCKING WORLD',
     'clickrate': 20000,
     'price': 134217728,
     'owned': false
