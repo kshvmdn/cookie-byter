@@ -110,16 +110,17 @@ var upg = {
     'price': 134217728,
     'owned': false
   },
-
 };
 
 var init = function () {
-  Session.setDefault('clickrate', 1.0);
-  Session.setDefault('boostrate', 0);
-  Session.setDefault('score', 0);
-  Session.setDefault('timeInterval', 1000);
-  Session.setDefault('people', ppl);
-  Session.setDefault('upgrades', upg)
+  Session.setDefault({
+    'clickrate': 1.0,
+    'boostrate': 0,
+    'score': 0,
+    'timeInterval': 1000,
+    'people': ppl,
+    'upgrades': upg
+  });
   Session.setDefaultTemp('verifyReset', false);
 
   var interval = Meteor.setInterval(function () {
@@ -136,16 +137,17 @@ Template.body.onRendered = function () {
 
 Template.body.events({
   'click .reset': function (event) {
-
     if (Session.get('verifyReset')) {
       event.target.innerHTML = 'Reset';
       Session.setTemp('verifyReset', false);
-      Session.set('clickrate', 1.0);
-      Session.set('boostrate', 0);
-      Session.set('score', 0);
-      Session.set('timeInterval', 1000);
-      Session.set('people', ppl);
-      Session.set('upgrades', upg);
+      Session.set({
+        'clickrate': 1.0,
+        'boostrate': 0,
+        'score': 0,
+        'timeInterval': 1000,
+        'people': ppl,
+        'upgrades': upg
+      });
       init();
     } else {
       Session.setTemp('verifyReset', true);
