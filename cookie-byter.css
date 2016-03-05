@@ -4,6 +4,7 @@
 }
 
 .main-button {
+    font-family: "Courier New", Courier, monospace;
     text-align: center;
     background-color: #9900cc;
     border: outset;
@@ -15,14 +16,15 @@
     font-size: 120px;
 }
 
-.buy {
+.buy-worker {
     display: inline;
     width: 33%;
     float: right;
 }
 
-.buy button {
-    text-align: right;
+.buy-worker button {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
     background-color: #9900cc;
     border: outset;
     color: white;
@@ -34,36 +36,41 @@
     width: 400px
 }
 
-.buy-worker button {
-  text-align: center;
-  background-color: #9900cc;
-}
-
-.buy-worker button {
-  text-align: right;
-  background-color: #9900cc;
-  border: outset;
-  color: white;
-  padding: 20px 20px;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-}
-
-.buy-worker button:hover {
-  background-color: #3e8e41
-}
-
-.buy-worker button:active {
-  background-color: #3e8e41;
-}
-
 .buy-worker button:hover {
   background-color: #cc00cc
 }
 
 .buy-worker button:active {
+  background-color: #cc00cc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buy-technology {
+    display: inline;
+    width: 33%;
+    float: left;
+}
+
+.buy-technology button {
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    background-color: #9900cc;
+    border: outset;
+    color: white;
+    padding: 20px 20px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    width: 400px
+}
+
+.buy-technology button:hover {
+  background-color: #cc00cc
+}
+
+.buy-technology button:active {
   background-color: #cc00cc;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
