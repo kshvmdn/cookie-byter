@@ -22,6 +22,13 @@
     font-size: 10px;
 }
 
+.buy:hover {background-color: #3e8e41}
+
+.buy:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);}
+
 p {
     display: block;
     margin-top: 1em;
