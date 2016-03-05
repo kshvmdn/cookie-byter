@@ -24,7 +24,7 @@
 <template name="worker">
   <div class="buy-worker">
     {{#each people}}
-      <button id={{class_}}>{{name}} (<b>{{price}} B</b>) [{{numberOwned}}]</button>
+      <button id={{class_}}>{{name}} (<b>{{priceText}}</b>) [{{numberOwned}}]</button>
     {{/each}}
   </div>
 </template>
@@ -32,7 +32,7 @@
 <template name="upgrade">
   <div class="buy-technology">
     {{#each upgrades}}
-      <button id={{class_}} class={{disabled}}>{{name}} (<b>{{price}} B</b>)</button>
+      <button id={{class_}} class={{disabled}}>{{name}} (<b>{{priceText}}</b>)</button>
     {{/each}}
   </div>
 </template>
