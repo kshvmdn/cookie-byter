@@ -2,6 +2,11 @@
   font-family: "Cultive Mono", "Courier New", Courier, monospace;
 }
 
+body {
+  background-color: black;
+  color: #00CC00;
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
@@ -19,7 +24,7 @@
 
 .main-button {
   text-align: center;
-  background-color: #9900cc;
+  background-color: #00CC00;
   border: outset;
   color: white;
   padding: 25px 50px;
@@ -44,7 +49,7 @@ button {
 
 .buy-worker button {
   text-align: center;
-  background-color: #9900cc;
+  background-color: #00cc00;
   color: white;
   padding: 20px 20px;
   text-align: right;
@@ -55,11 +60,12 @@ button {
 }
 
 .buy-worker button:hover {
-  background-color: #cc00cc
+  background-color: #fff;
+  color: #00CC00;
 }
 
 .buy-worker button:active {
-  background-color: #cc00cc;
+  background-color: #fff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -79,7 +85,7 @@ div::-webkit-scrollbar {
 
 .buy-technology button {
   text-align: left;
-  background-color: #9900cc;
+  background-color: #00cc00;
   color: white;
   padding: 20px 20px;
   text-decoration: none;
@@ -89,11 +95,12 @@ div::-webkit-scrollbar {
 }
 
 .buy-technology button:hover {
-  background-color: #cc00cc
+  background-color: #fff;
+  color: #00CC00;
 }
 
 .buy-technology button:active {
-  background-color: #cc00cc;
+  background-color: #fff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -116,13 +123,17 @@ p {
 .reset {
   text-align: center;
   background-color: #ff0000;
+  color: #fff;
   border: outset;
-  color: white;
   padding: 10px 15px;
   text-decoration: none;
   display: inline;
   font-size: 20px;
   width: 16.5%;
+}
+.reset:hover {
+  color: #ff0000;
+  background-color: #fff;
 }
 
 button.disabled {
@@ -169,7 +180,7 @@ button.disabled:active {
     border-radius: 6px;
     padding: 5px 0;
     font-size: 1rem;
-    
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -186,7 +197,7 @@ button.disabled:active {
     border-radius: 6px;
     padding: 5px 0;
     font-size: 1rem;
-    
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
