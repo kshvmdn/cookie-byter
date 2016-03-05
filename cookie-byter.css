@@ -1,6 +1,6 @@
 .main-button {
     text-align: center;
-    background-color: #4CAF50; /* Green */
+    background-color: #9900cc; 
     border: outset;
     color: white;
     padding: 100px 200px;
@@ -12,7 +12,7 @@
 
 .buy button {
     text-align: center;
-    background-color: #4CAF50; /* Green */
+    background-color: #9900cc; 
     border: outset;
     color: white;
     padding: 20px 20px;
