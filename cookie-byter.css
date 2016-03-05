@@ -2,6 +2,10 @@
   font-family: "Cultive Mono", "Courier New", Courier, monospace;
 }
 
+.title {
+  font-size: 3rem;
+}
+
 .main {
   display: inline-block;
   width: 33%;
@@ -24,6 +28,10 @@
   font-size: 120px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .buy-worker {
   display: inline;
   width: 33%;
@@ -34,7 +42,6 @@
 .buy-worker button {
   text-align: center;
   background-color: #9900cc;
-  border: outset;
   color: white;
   padding: 20px 20px;
   text-align: right;
@@ -64,7 +71,6 @@
 .buy-technology button {
   text-align: left;
   background-color: #9900cc;
-  border: outset;
   color: white;
   padding: 20px 20px;
   text-decoration: none;

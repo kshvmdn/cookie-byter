@@ -6,7 +6,7 @@
 </head>
 
 <body>
-   <center><h1>COOKIE-BYTER</h1></center>
+   <center><h1 class="title">COOKIE-BYTER</h1></center>
    {{> upgrade}}
    {{> byte}}
    {{> worker}}
@@ -16,7 +16,7 @@
 <template name="byte">
     <div class="main">
       <button class="main-button">BYTE</button>
-      <p>{{score}} Bytes</p>
+      <p>{{text}}</p>
       <p>{{binary}}</p>
     </div>
 </template>
