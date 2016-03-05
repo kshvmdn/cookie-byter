@@ -1,6 +1,9 @@
 Template.byte.helpers({
   score: function () {
     return Session.get('score');
+  },
+  binary: function () {
+    return Session.get('score').toString(2);
   }
 });
 
