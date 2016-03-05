@@ -174,7 +174,7 @@ button.disabled:active {
     position: absolute;
     z-index: 1;
     top: -5px;
-    left: 105%;
+    left: 200%;
 }
 
 .tooltipworkers .tooltiptext {
