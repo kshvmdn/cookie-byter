@@ -4,6 +4,8 @@ Template.byte.helpers({
   }
 });
 
+var interval;
+
 Template.byte.events({
   'click button': function () {
     if (interval === undefined) {
