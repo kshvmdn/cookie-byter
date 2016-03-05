@@ -93,26 +93,27 @@ p {
 }
 
 .reset {
-    text-align: center;
-    background-color: #ff0000;
-    border: outset;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 20px;
-    width: 16%
+  text-align: center;
+  background-color: #ff0000;
+  border: outset;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  width: 16%
 }
 
 button.disabled {
-
-    transform: translateY(0px);
-    box-shadow: 0 5px #808080;
-    background-color: #808080;
-
+  box-shadow: 0 5px #808080;
+  background-color: #808080;
 }
 
-button.disabled button:hover {
-  background-color: #808080
+button.disabled:hover {
+  background-color: #818181;
+}
+
+
+button.disabled:active {
+  transform: translateY(0px);
 }
