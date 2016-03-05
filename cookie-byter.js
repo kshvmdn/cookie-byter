@@ -4,17 +4,17 @@ if (Meteor.isClient) {
   var ppl = {
     'student': {
       'rate': 2,
-      'price': 256,
+      'price': 64,
       'numberOwned': 0
     },
     'intern': {
       'rate': 3,
-      'price': 512,
+      'price': 128,
       'numberOwned': 0
     },
     'programmer': {
       'rate': 4,
-      'price': 1024,
+      'price': 256,
       'numberOwned': 0
     }
   };
