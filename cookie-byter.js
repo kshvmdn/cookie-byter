@@ -23,13 +23,13 @@ if (Meteor.isClient) {
   Session.setDefault('time', 0);
   Session.setDefault('timeInterval', 1000);
 
-  Template.cookie.helpers({
+  Template.byte.helpers({
     score: function () {
       return Session.get('score');
     }
   });
 
-  Template.cookie.events({
+  Template.byte.events({
     'click button': function () {
       if (interval === undefined) {
         interval = Meteor.setInterval(function () {
