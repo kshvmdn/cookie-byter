@@ -4,17 +4,17 @@ if (Meteor.isClient) {
   var ppl = {
     'student': {
       'rate': 2,
-      'price': 256,
+      'price': 64,
       'numberOwned': 0
     },
     'intern': {
       'rate': 3,
-      'price': 512,
+      'price': 128,
       'numberOwned': 0
     },
     'programmer': {
       'rate': 4,
-      'price': 1024,
+      'price': 256,
       'numberOwned': 0
     }
   };
@@ -23,13 +23,13 @@ if (Meteor.isClient) {
   Session.setDefault('time', 0);
   Session.setDefault('timeInterval', 1000);
 
-  Template.cookie.helpers({
+  Template.byte.helpers({
     score: function () {
       return Session.get('score');
     }
   });
 
-  Template.cookie.events({
+  Template.byte.events({
     'click button': function () {
       if (interval === undefined) {
         interval = Meteor.setInterval(function () {
