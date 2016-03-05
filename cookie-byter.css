@@ -5,7 +5,7 @@
 
 .main-button {
     text-align: center;
-    background-color: #9900cc; 
+    background-color: #9900cc;
     border: outset;
     color: white;
     padding: 25px 50px;
@@ -23,7 +23,7 @@
 
 .buy button {
     text-align: right;
-    background-color: #9900cc; 
+    background-color: #9900cc;
     border: outset;
     color: white;
     padding: 20px 20px;
@@ -59,11 +59,11 @@
   background-color: #3e8e41;
 }
 
-.buy button:hover {
+.buy-worker button:hover {
   background-color: #cc00cc
 }
 
-.buy button:active {
+.buy-worker button:active {
   background-color: #cc00cc;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
