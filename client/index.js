@@ -42,7 +42,7 @@ var ppl = {
     'numberOwned': 0
   },
   'billgates': {
-    'name': 'A BILL GATES',
+    'name': 'A WHOLE BILL GATES',
     'boostrate': 200,
     'price': 131072,
     'numberOwned': 0
