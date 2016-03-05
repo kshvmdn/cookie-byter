@@ -1,22 +1,18 @@
+
 <head>
-  <title>CookieByter</title>
+ <title>CookieByter</title>
+ <style type="text/css" href="CookieByter.css"></style>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> cookie}}
-
-  {{> buy}}
+ <h1>CookieByter</h1>
+     
+ {{> mainbutton}}
 </body>
 
-<template name="cookie">
-  <button>BYTE</button>
-  <p>{{score}}</p>
-</template>
-
-<template name="buy">
-  <button id="student">BUY STUDENT ($100)</button>
-  <button id="intern">BUY INTERN ($150)</button>
-  <button id="programmer">BUY PROGRAMMER ($200)</button>
+<template name="mainbutton"> <!-- getting placed where {{> mainbutton}} is -->
+    <div class="click" style="text-align:center;">
+      <button class="main">Click Me</button>
+      <p>You have {{counter}} bytes and {{time}} has passed.</p>
+    </div>
 </template>
