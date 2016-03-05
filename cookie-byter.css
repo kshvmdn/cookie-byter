@@ -1,25 +1,30 @@
 .main-button {
-    text-align: center;
-    background-color: #9900cc;
-    border: outset;
-    color: white;
-    padding: 100px 200px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 120px;
+  text-align: center;
+  background-color: #9900cc;
+  border: outset;
+  color: white;
+  padding: 50px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 120px;
 }
 
 .buy-worker button {
-    text-align: center;
-    background-color: #9900cc;
-    border: outset;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
+  text-align: center;
+  background-color: #9900cc;
+}
+
+.buy-worker button {
+  text-align: right;
+  background-color: #9900cc;
+  border: outset;
+  color: white;
+  padding: 20px 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .buy-worker button:hover {
@@ -28,14 +33,23 @@
 
 .buy-worker button:active {
   background-color: #3e8e41;
+}
+
+.buy button:hover {
+  background-color: #cc00cc
+}
+
+.buy button:active {
+  background-color: #cc00cc;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+  display: block;
+  font-family: courier;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
 }
