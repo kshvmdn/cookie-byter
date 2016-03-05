@@ -120,6 +120,7 @@ var init = function () {
   Session.setDefault('timeInterval', 1000);
   Session.setDefault('people', ppl);
   Session.setDefault('upgrades', upg)
+  Session.setDefaultTemp('verifyReset', false);
 
   var interval = Meteor.setInterval(function () {
     Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
@@ -134,13 +135,25 @@ Template.body.onRendered = function () {
 }
 
 Template.body.events({
-  'click .reset': function () {
-    Session.set('clickrate', 1.0);
-    Session.set('boostrate', 0);
-    Session.set('score', 0);
-    Session.set('timeInterval', 1000);
-    Session.set('people', ppl);
-    Session.set('upgrades', upg)
-    init();
+  'click .reset': function (event) {
+
+    if (Session.get('verifyReset')) {
+      event.target.innerHTML = 'Reset';
+      Session.setTemp('verifyReset', false);
+      Session.set('clickrate', 1.0);
+      Session.set('boostrate', 0);
+      Session.set('score', 0);
+      Session.set('timeInterval', 1000);
+      Session.set('people', ppl);
+      Session.set('upgrades', upg);
+      init();
+    } else {
+      Session.setTemp('verifyReset', true);
+      event.target.innerHTML = 'Are you sure?';
+      setTimeout(function(){
+        Session.setTemp('verifyReset', false)
+        event.target.innerHTML = 'Reset';
+      }, 3000);
+    }
   }
 });
