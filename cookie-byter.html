@@ -1,0 +1,22 @@
+<head>
+  <title>CookieByter</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> cookie}}
+
+  {{> buy}}
+</body>
+
+<template name="cookie">
+  <button>BYTE</button>
+  <p>{{score}}</p>
+</template>
+
+<template name="buy">
+  <button id="student">BUY STUDENT ($100)</button>
+  <button id="intern">BUY INTERN ($150)</button>
+  <button id="programmer">BUY PROGRAMMER ($200)</button>
+</template>
