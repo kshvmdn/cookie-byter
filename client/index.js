@@ -65,42 +65,42 @@ var upg = {
   'parents': {
     'clickrate': 1,
     'price': 128,
-    'owned': False
+    'owned': false
   },
   'ownplace': {
     'clickrate': 5,
     'price': 1024,
-    'owned': False
+    'owned': false
   },
   'startup': {
     'clickrate': 10,
     'price': 4096,
-    'owned': False
+    'owned': false
   },
   'office': {
     'clickrate': 50,
     'price': 16384,
-    'numberOwned': 0
+    'owned': false
   },
   'building': {
     'clickrate': 200,
     'price': 131072,
-    'numberOwned': 0
+    'owned': false
   },
   'city': {
     'clickrate': 1000,
     'price': 1048576,
-    'numberOwned': 0
+    'owned': false
   },
   'country': {
     'clickrate': 7777,
     'price': 8388608,
-    'numberOwned': 0
+    'owned': false
   },
   'world': {
     'clickrate': 20000,
     'price': 134217728,
-    'numberOwned': 0
+    'owned': false
   },
 
 };
