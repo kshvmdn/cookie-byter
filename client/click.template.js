@@ -73,6 +73,10 @@ Template.byte.helpers({
 
 Template.byte.events({
   'click button': function () {
-    Session.setPersistent('score', Session.get('score') + Session.get('clickrate'));
+    Session.setPersistent({
+      'score': Session.get('score') + Session.get('clickrate'),
+      'totalClicks': Session.get('totalClicks') + 1,
+      'totalBytes': Session.get('totalBytes') + Session.get('clickrate')
+    });
   }
 });
