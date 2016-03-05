@@ -16,13 +16,33 @@ var ppl = {
     'numberOwned': 0
   },
   'intern': {
-    'boostrate': 3,
+    'boostrate': 4,
     'price': 256,
     'numberOwned': 0
   },
   'softwareengineer': {
-    'boostrate': 5,
+    'boostrate': 10,
     'price': 2048,
+    'numberOwned': 0
+  },
+  'srsoftwareengineer': {
+    'boostrate': 25,
+    'price': 8192,
+    'numberOwned': 0
+  },
+  'cto': {
+    'boostrate': 75,
+    'price': 32768,
+    'numberOwned': 0
+  },
+  'billgates': {
+    'boostrate': 200,
+    'price': 131072,
+    'numberOwned': 0
+  },
+  'alanturing': {
+    'boostrate': 500,
+    'price': 524288,
     'numberOwned': 0
   }
 };
