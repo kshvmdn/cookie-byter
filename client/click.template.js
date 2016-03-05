@@ -4,15 +4,8 @@ Template.byte.helpers({
   }
 });
 
-var interval;
-
 Template.byte.events({
   'click button': function () {
-    if (interval === undefined) {
-      interval = Meteor.setInterval(function () {
-      Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
-      }, Session.get('timeInterval'));
-    }
     Session.setPersistent('score', Session.get('score') + Session.get('clickrate'));
   }
 });
