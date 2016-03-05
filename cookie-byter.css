@@ -94,12 +94,13 @@ p {
 
 .reset {
     text-align: center;
-    background-color: #9900cc;
+    background-color: #ff0000;
     border: outset;
     color: white;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 120px;
+    font-size: 20px;
+    width: 33%
 }
