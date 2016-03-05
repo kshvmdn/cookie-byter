@@ -6,13 +6,22 @@
 
 <body>
  <h1>CookieByter</h1>
-     
- {{> mainbutton}}
+
+ {{> byte}}
+ {{> buy}}
 </body>
 
-<template name="mainbutton"> <!-- getting placed where {{> mainbutton}} is -->
-    <div class="click" style="text-align:center;">
-      <button class="main">Click Me</button>
-      <p>You have {{counter}} bytes and {{time}} has passed.</p>
+<template name="byte"> <!-- getting placed where {{> mainbutton}} is -->
+    <div class="main">
+      <button class="main-button">BYTE</button>
+      <p>{{score}} Bytes</p>
     </div>
+</template>
+
+<template name="buy">
+  <div class="buy">
+    <button id="student">BUY STUDENT ($100)</button>
+    <button id="intern">BUY INTERN ($150)</button>
+    <button id="programmer">BUY PROGRAMMER ($200)</button>
+  </div>
 </template>
