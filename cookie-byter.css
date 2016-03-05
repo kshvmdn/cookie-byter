@@ -9,3 +9,39 @@
     display: inline-block;
     font-size: 120px;
 }
+
+#student {
+    text-align: center;
+    background-color: #4CAF50; /* Green */
+    border: outset;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+
+#intern {
+    text-align: center;
+    background-color: #4CAF50; /* Green */
+    border: outset;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+
+#programmer {
+    text-align: center;
+    background-color: #4CAF50; /* Green */
+    border: outset;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
