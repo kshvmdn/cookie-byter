@@ -91,6 +91,10 @@ button {
   overflow-y: scroll
 }
 
+div::-webkit-scrollbar {
+    display: none;
+}
+
 .buy-technology button {
   text-align: left;
   background-color: #9900cc;
