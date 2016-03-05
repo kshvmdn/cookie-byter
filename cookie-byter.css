@@ -3,7 +3,7 @@
     background-color: #9900cc; 
     border: outset;
     color: white;
-    padding: 100px 200px;
+    padding: 50px 100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -11,29 +11,30 @@
 }
 
 .buy button {
-    text-align: center;
+    text-align: right;
     background-color: #9900cc; 
     border: outset;
     color: white;
     padding: 20px 20px;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .buy button:hover {
-  background-color: #3e8e41
+  background-color: #cc00cc
 }
 
 .buy button:active {
-  background-color: #3e8e41;
+  background-color: #cc00cc;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 p {
     display: block;
+    font-family: courier;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 0;
