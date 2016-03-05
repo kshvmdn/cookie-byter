@@ -125,6 +125,7 @@ var init = function () {
 
   var interval = Meteor.setInterval(function () {
     Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
+    document.title = String(Session.get('score')) + ' | CookieByter';
   }, Session.get('timeInterval'));
 }
 
