@@ -56,6 +56,8 @@ button {
   width: 33%;
   float: right;
   text-align: center;
+  height: 500px;
+  overflow-y: scroll;
 }
 
 .buy-worker button {
@@ -85,6 +87,8 @@ button {
   width: 33%;
   float: left;
   text-align: center;
+  height: 500px;
+  overflow-y: scroll
 }
 
 .buy-technology button {
