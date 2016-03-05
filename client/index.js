@@ -33,16 +33,10 @@ var init = function () {
   Session.setDefault('score', 0);
   Session.setDefault('timeInterval', 1000);
   Session.setDefault('people', ppl);
-  Session.setDefault('interval', undefined);
 
-  var interval = Session.get('interval');
-
-  if (interval === undefined) {
-    interval = Meteor.setInterval(function () {
-      Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
-    }, Session.get('timeInterval'));
-    Session.setPersistent('interval', interval);
-  }
+  var interval = Meteor.setInterval(function () {
+    Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
+  }, Session.get('timeInterval'));
 }
 
 Template.body.onRendered = function () {
