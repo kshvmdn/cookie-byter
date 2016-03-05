@@ -1,9 +1,22 @@
+Template.worker.helpers({
+  people: function () {
+    people = []
+    _.forEach(Session.get('people'), function(person, key) {
+      person.class_ = key;
+      people.push(person);
+    });
+    return people;
+  }
+});
+
 Template.worker.events({
   'click button': function (event) {
     var people = Session.get('people');
     var person = people[event.target.id];
     if (Session.get('score') >= person.price) {
       person.numberOwned += 1;
+      person.price *= 1.2
+      person.price = Math.round(person.price);
       people[event.target.id] = person;
 
       Session.setPersistent({
