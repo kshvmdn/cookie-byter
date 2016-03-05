@@ -1,10 +1,13 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
 .main {
     display: inline-block;
     width: 33%
 }
 
 .main-button {
-    font-family: "Courier New", Courier, monospace;
     text-align: center;
     background-color: #9900cc;
     border: outset;
@@ -23,7 +26,6 @@
 }
 
 .buy-worker button {
-    font-family: "Courier New", Courier, monospace;
     text-align: center;
     background-color: #9900cc;
     border: outset;
@@ -53,7 +55,6 @@
 }
 
 .buy-technology button {
-    font-family: "Courier New", Courier, monospace;
     text-align: right;
     background-color: #9900cc;
     border: outset;
