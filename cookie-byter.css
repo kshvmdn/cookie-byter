@@ -7,6 +7,11 @@
     width: 33%
 }
 
+.main p {
+
+    font-size: 35px;
+}
+
 .main-button {
     text-align: center;
     background-color: #9900cc;
@@ -101,7 +106,7 @@ p {
   text-decoration: none;
   display: inline;
   font-size: 20px;
-  width: 16%
+  width: 16.5%
 }
 
 button.disabled {
