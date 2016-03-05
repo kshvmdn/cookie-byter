@@ -114,12 +114,12 @@ var upg = {
 };
 
 var init = function () {
-  Session.set('clickrate', 1.0);
-  Session.set('boostrate', 0);
-  Session.set('score', 0);
-  Session.set('timeInterval', 1000);
-  Session.set('people', ppl);
-  Session.set('upgrades', upg)
+  Session.setDefault('clickrate', 1.0);
+  Session.setDefault('boostrate', 0);
+  Session.setDefault('score', 0);
+  Session.setDefault('timeInterval', 1000);
+  Session.setDefault('people', ppl);
+  Session.setDefault('upgrades', upg)
 
   var interval = Meteor.setInterval(function () {
     Session.setPersistent('score', Session.get('score') + Session.get('boostrate'));
@@ -135,7 +135,12 @@ Template.body.onRendered = function () {
 
 Template.body.events({
   'click .reset': function () {
-    Session.clear();
+    Session.set('clickrate', 1.0);
+    Session.set('boostrate', 0);
+    Session.set('score', 0);
+    Session.set('timeInterval', 1000);
+    Session.set('people', ppl);
+    Session.set('upgrades', upg)
     init();
   }
 });
