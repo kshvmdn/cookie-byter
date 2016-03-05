@@ -2,6 +2,7 @@ Template.upgrade.helpers({
   upgrades: function () {
     upgrades = []
     _.forEach(Session.get('upgrades'), function(upgrade, key) {
+      upgrade.disabled = upgrade.owned ? 'disabled' : '';
       upgrade.class_ = key;
       upgrades.push(upgrade);
     });
@@ -18,10 +19,9 @@ Template.upgrade.events({
         score: Session.get('score') - upgrade.price,
         clickrate: Session.get('clickrate') + upgrade.clickrate,
       });
-
-      uprade.owned = true
+      upgrade.owned = true
       upgrades[event.target.id] = upgrade;
-      Session.setPersistent('upgrades', upgrade);
+      Session.setPersistent('upgrades', upgrades);
     }
   }
 });
