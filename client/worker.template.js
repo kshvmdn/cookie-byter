@@ -38,7 +38,7 @@ Template.worker.events({
     if (Session.get('score') >= person.price) {
       Session.setPersistent({
         score: Session.get('score') - person.price,
-        boostrate: Session.get('boostrate') + person.boostrate,
+        boostrate: Session.get('boostrate') + person.boostrate
       });
 
       person.numberOwned += 1;
