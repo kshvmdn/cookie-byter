@@ -34,72 +34,54 @@ body {
   font-size: 120px;
 }
 
+div::-webkit-scrollbar {
+    display: none;
+}
+
 button {
   cursor: pointer;
 }
 
 .buy-worker {
-  display: inline;
-  width: 33%;
   float: right;
-  text-align: center;
-  height: 500px;
-  overflow-y: scroll;
-}
-
-.buy-worker button {
-  text-align: center;
-  background-color: #00cc00;
-  color: white;
-  padding: 20px 20px;
-  text-align: right;
-  text-decoration: none;
-  font-size: 20px;
-  float: right;
-  width: 400px
-}
-
-.buy-worker button:hover {
-  background-color: #fff;
-  color: #00CC00;
-}
-
-.buy-worker button:active {
-  background-color: #fff;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 
 .buy-technology {
+  float: left;
+}
+
+.buy-worker, .buy-technology {
   display: inline;
   width: 33%;
-  float: left;
   text-align: center;
   height: 500px;
   overflow-y: scroll
 }
 
-div::-webkit-scrollbar {
-    display: none;
-}
-
-.buy-technology button {
-  text-align: left;
+.buy-worker button, .buy-technology button {
+  text-align: center;
   background-color: #00cc00;
   color: white;
   padding: 20px 20px;
   text-decoration: none;
   font-size: 20px;
-  float: left;
   width: 400px;
 }
 
-.buy-technology button:hover {
+.buy-worker button {
+  float: right;
+}
+
+.buy-technology button {
+  float: left;
+}
+
+.buy-worker button:hover, .buy-technology button:hover {
   background-color: #fff;
   color: #00CC00;
 }
 
-.buy-technology button:active {
+.buy-worker button:active, .buy-technology button:active {
   background-color: #fff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -150,65 +132,65 @@ button.disabled:active {
 }
 
 .tooltipupgrades {
-    position: absolute;
-    top: 80px;
-    right: 1300px;
-    width: 100px;
-    height: 100px;
-    font-size: 2.5rem;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: absolute;
+  top: 80px;
+  right: 1300px;
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltipworkers {
-    position: absolute;
-    top: 80px;
-    right: 180px;
-    width: 100px;
-    height: 100px;
-    font-size: 2.5rem;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: absolute;
+  top: 80px;
+  right: 180px;
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltipupgrades .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    font-size: 1rem;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 1rem;
 
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 200%;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 200%;
 }
 
 .tooltipworkers .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    font-size: 1rem;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 1rem;
 
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    right: 105%;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
 }
 
 .tooltipupgrades:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 .tooltipworkers:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
