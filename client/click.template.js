@@ -30,7 +30,7 @@ Template.byte.helpers({
       num = num.toFixed(2);
       if (num.slice(-2) == '00')
         num = num.slice(0, -3);
-      return num + ' ' + byteType + '/ sec';
+      return num + ' ' + byteType + ' / sec';
     }
     num = num.toFixed(2);
     if (num.slice(-2) == '00')
@@ -74,5 +74,6 @@ Template.byte.helpers({
 Template.byte.events({
   'click button': function () {
     Session.setPersistent('score', Session.get('score') + Session.get('clickrate'));
+    document.title = String(Session.get('score')) + ' | CookieByter';
   }
 });
