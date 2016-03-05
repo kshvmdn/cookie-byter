@@ -102,5 +102,17 @@ p {
     text-decoration: none;
     display: inline;
     font-size: 20px;
-    width: 33%
+    width: 16%
+}
+
+button.disabled {
+
+    transform: translateY(0px);
+    box-shadow: 0 5px #808080;
+    background-color: #808080;
+
+}
+
+button.disabled button:hover {
+  background-color: #808080
 }
