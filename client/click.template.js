@@ -74,6 +74,5 @@ Template.byte.helpers({
 Template.byte.events({
   'click button': function () {
     Session.setPersistent('score', Session.get('score') + Session.get('clickrate'));
-    document.title = String(Session.get('score')) + ' | CookieByter';
   }
 });
