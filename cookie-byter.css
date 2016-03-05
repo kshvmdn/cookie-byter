@@ -1,13 +1,24 @@
+.main {
+    display: inline-block;
+    width: 33%
+}
+
 .main-button {
     text-align: center;
     background-color: #9900cc; 
     border: outset;
     color: white;
-    padding: 50px 100px;
+    padding: 25px 50px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     font-size: 120px;
+}
+
+.buy {
+    display: inline;
+    width: 33%;
+    float: right;
 }
 
 .buy button {
@@ -18,8 +29,9 @@
     padding: 20px 20px;
     text-align: right;
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
+    float: right;
+    width: 400px
 }
 
 .buy button:hover {
@@ -30,6 +42,12 @@
   background-color: #cc00cc;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.tech {
+    display: inline;
+    width: 33%;
+    float: left;
 }
 
 p {
